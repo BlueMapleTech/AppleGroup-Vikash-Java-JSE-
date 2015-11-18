@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+		
+    
+        <bean id="id1" class="com.bluemaple.application.test.Add">
+		<property name="name" value="ela" />
+		<property name="address" value="xkjz"/>
+		<property name="age" value="23"/>
+		<property name="pin" value="78965233"/>
+		<property name="add" ref="id2"/>
+		
+		
+		
+		</bean>
+		
+		<bean id="id2" class="com.bluemaple.application.test.Add">
+		<property name="name" value="dharma" />
+		<property name="address" value="dddd"/>
+		<property name="age" value="23"/>
+		<property name="pin" value="8965375"/>
+		<property name="add" ref="id3"/>
+		
+	  </bean>
+	  
+	   <bean id="id3" class="com.bluemaple.application.test.Add">
+	   <property name="name" value="vinoth" />
+		<property name="address" value="xyzz"/>
+		<property name="age" value="26"/>
+		<property name="pin" value="123654"/>
+	 </bean>
+    </beans>
+
